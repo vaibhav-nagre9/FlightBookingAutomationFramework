@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Flight Booking Suite">
+
+    <test name="Flight Booking Tests">
+
+        <classes>
+
+            <class name="com.vaibhav.flightbooking.tests.HomePageTest"/>
+
+            <class name="com.vaibhav.flightbooking.tests.FlightSelectionTest"/>
+
+            <class name="com.vaibhav.flightbooking.tests.PurchasePageTest"/>
+
+            <class name="com.vaibhav.flightbooking.tests.ConfirmationPageTest"/>
+
+            <class name="com.vaibhav.flightbooking.tests.EndToEndTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
