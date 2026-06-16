@@ -159,9 +159,29 @@ mvn test
 
 ### Run TestNG Suite
 
+Run the suite from Eclipse:
+
+1. Right-click `testng.xml`
+2. Select **Run As → TestNG Suite**
+
+Or execute using Maven:
+
 ```bash
-testng.xml
-```
+mvn test -DsuiteXmlFile=testng.xml
+
+## Design Patterns Used
+
+* Page Object Model (POM)
+* Factory Design Pattern (DriverFactory)
+
+---
+
+## Prerequisites
+
+* Java 17+
+* Maven 3.9+
+* Eclipse IDE
+* Chrome Browser
 
 ---
 
