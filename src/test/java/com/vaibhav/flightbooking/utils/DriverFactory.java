@@ -7,16 +7,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 
+	public static WebDriver initializeDriver() {
 
-    public static WebDriver initializeDriver() {
+		WebDriverManager.chromedriver().setup();
 
-        WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
 
-        WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 
-        driver.manage().window().maximize();
+		return driver;
+	}
 
-        return driver;
-    }
-	
 }

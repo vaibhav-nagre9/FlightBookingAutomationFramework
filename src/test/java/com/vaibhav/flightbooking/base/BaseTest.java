@@ -10,22 +10,22 @@ import org.testng.annotations.AfterMethod;
 
 public class BaseTest {
 
-	 protected WebDriver driver;
+	protected WebDriver driver;
 
-	    @BeforeMethod
-	    public void setup() {
+	@BeforeMethod
+	public void setup() {
 
-	        driver = DriverFactory.initializeDriver();
+		driver = DriverFactory.initializeDriver();
 
-	        driver.get(ConfigReader.getUrl());
-	    }
+		driver.get(ConfigReader.getUrl());
+	}
 
-	    @AfterMethod
-	    public void tearDown() {
+	@AfterMethod
+	public void tearDown() {
 
-	        if(driver != null) {
-	            driver.quit();
-	        }
-	    }
-	
+		if (driver != null) {
+			driver.quit();
+		}
+	}
+
 }

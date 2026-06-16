@@ -7,32 +7,30 @@ import java.util.Properties;
 public class ConfigReader {
 
 	private static Properties properties;
-	
+
 	static {
 
-        properties = new Properties();
+		properties = new Properties();
 
-        try {
+		try {
 
-            FileInputStream fis =
-                    new FileInputStream(
-                            "src/test/resources/config.properties");
+			FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
 
-            properties.load(fis);
+			properties.load(fis);
 
-        } catch (IOException e) {
+		} catch (IOException e) {
 
-            e.printStackTrace();
-        }
-    }
+			e.printStackTrace();
+		}
+	}
 
-    public static String getBrowser() {
+	public static String getBrowser() {
 
-        return properties.getProperty("browser");
-    }
+		return properties.getProperty("browser");
+	}
 
-    public static String getUrl() {
+	public static String getUrl() {
 
-        return properties.getProperty("url");
-    }
+		return properties.getProperty("url");
+	}
 }
