@@ -10,12 +10,12 @@ The framework automates an end-to-end flight booking flow, including flight sear
 
 ## Tech Stack
 
-* Java
-* Selenium WebDriver
-* TestNG
-* Maven
-* Page Object Model (POM)
-* Git & GitHub
+* **Java**
+* **Selenium WebDriver**
+* **TestNG**
+* **Maven**
+* **Page Object Model (POM)**
+* **Git & GitHub**
 
 ---
 
@@ -38,7 +38,7 @@ The framework follows the Page Object Model (POM) design pattern to improve main
 
 #### ConfigReader
 
-* Reads values from config.properties
+* Reads values from `config.properties`
 
 #### Page Classes
 
@@ -95,13 +95,29 @@ FlightBookingAutomationFramework
 
 ## Features
 
-* Page Object Model (POM)
+* **Page Object Model (POM)**
 * Reusable page methods
 * Configuration management using properties file
 * TestNG test execution
 * Maven dependency management
 * End-to-End flight booking validation
 * Cross-browser support ready
+
+---
+
+## Design Patterns Used
+
+* **Page Object Model (POM)**
+* **Factory Design Pattern (DriverFactory)**
+
+---
+
+## Prerequisites
+
+* **Java 17+**
+* **Maven 3.9+**
+* **Eclipse IDE**
+* **Chrome Browser**
 
 ---
 
@@ -168,20 +184,7 @@ Or execute using Maven:
 
 ```bash
 mvn test -DsuiteXmlFile=testng.xml
-
-## Design Patterns Used
-
-* Page Object Model (POM)
-* Factory Design Pattern (DriverFactory)
-
----
-
-## Prerequisites
-
-* Java 17+
-* Maven 3.9+
-* Eclipse IDE
-* Chrome Browser
+```
 
 ---
 
@@ -198,6 +201,6 @@ mvn test -DsuiteXmlFile=testng.xml
 
 ## Author
 
-Vaibhav Nagre
+**Vaibhav Nagre**
 
 Automation Testing | Selenium | Java | TestNG | Maven | Git
